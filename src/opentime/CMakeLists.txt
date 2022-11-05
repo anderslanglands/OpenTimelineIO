@@ -22,7 +22,8 @@ set_target_properties(opentime PROPERTIES
     DEBUG_POSTFIX "${OTIO_DEBUG_POSTFIX}"
     LIBRARY_OUTPUT_NAME "opentime"
     POSITION_INDEPENDENT_CODE TRUE
-    WINDOWS_EXPORT_ALL_SYMBOLS true)
+    WINDOWS_EXPORT_ALL_SYMBOLS true
+    CXX_STANDARD 14)
 
 if(APPLE)
     set_target_properties(opentime PROPERTIES 
